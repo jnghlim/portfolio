@@ -248,6 +248,7 @@ nav{
 
     .about-me__img {
         grid-area: img;
+        max-height: 200%;
         position: relative;
         z-index: 2;
     }
