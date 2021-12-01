@@ -29,24 +29,33 @@
 
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            The title <strong> of my project </strong>
+            <strong> Heart Attack Prediction </strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Data Enthusiast</p>
-        <img src="/img/self.jpg" alt="mike smiling" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">Data Source: Kaggle.com | Library: Pandas, Matplotlib, Seaborn</p>
+        <img src="img/heart.jpg" alt="heart" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        
+        <p>I have used the data from website Kaggle to predict the Heart Attack rate of the patient based on their biological dataset
+            such as their age, gender, cholesterol amount etc. 
             </p>
-        <img src="" alt="">
-        <p>when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
+        <img src="portfolio-1-img/dataset.png" alt="data">
+
+        <p>After checking up with the data, see if there is any null values and see how many unique values for each columns, I have changed
+            the categorical values into numeric values using mapping function to visualize those into plots. Below image shows the distribution
+            of each categorical features.
             </p>
-        <p>electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.</p>
+        <img src="portfolio-1-img/Categorical Features.jpg" alt="categorical features">
+
+        <p><i class="fas fa-book"></i> From the graphs above, we were able to find out that all the features at least contribute to heart attack at certain level</p>
+        <p>After the visualization of the categorical features, I have decided to look into the numeric categorical features such as
+            age, chol, and etc. Below graphs represent the distribution of each numeric features.
+        </p>
+        <img src="portfolio-1-img/Continuous Features KDE Plots.jpg" alt="KDE">
+        <p><i class="fas fa-book"></i> KDE Plot represents the data using a continuous probability density curve. The more two kde plots overlap, the less difference between
+        those two </p>
+        <p>
     </div>
 
     <footer class="footer">
