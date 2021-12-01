@@ -46,7 +46,7 @@ section{
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 strong{
@@ -119,4 +119,8 @@ nav{
         min-width: 250px;
     }
 
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1/1;
+    }
 }
