@@ -75,6 +75,10 @@ strong{
     transition: transform 280ms ease-in-out;
 }
 
+.btn:hover{
+    transform: scale(1.1);
+}
+
 /* Typography */
 h1,
 h2,
