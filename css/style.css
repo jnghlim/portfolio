@@ -375,12 +375,11 @@ header {
     grid-template-rows: repeat(auto-fit, minmax(200px, 280px));
 }
 
-/*
 .portfolio_item {
-    background: var(--clr-accent);
+    /*background: var(--clr-accent);*/
     overflow: hidden;
 }
-*/
+
 
 .portfolio__img {
     width:100%;
@@ -392,28 +391,21 @@ header {
         opacity 250ms linear; 
 }
 
-/*
 .portfolio__item:focus {
-    
     position: relative;
-    z-index: 2;
-    
+    z-index: 2; 
 }
-*/
 
 .portfolio__img:hover {
     transform: scale(1.2);
     opacity: 0;
 }
 
-/*
 .portfolio__img:hover,
 .portfolio__item:focus {
     transform: scale(1.2);
     opacity: .75;
-    
 }
-*/
 
 .footer {
     background: #111;
@@ -471,4 +463,10 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+span {
+    font-size: 0.8rem;
+    color:white;
 }
