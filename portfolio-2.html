@@ -46,8 +46,8 @@
         </p>
             
         <p>
-            After data cleansing, I used "Folium" library from python to visualize the data points, dividing up the colors for each aerial 
-            section (Manhattan, Brooklyn, Bronx, Queens, Staten Island). 
+            After data cleansing, I used <strong>"Folium"</strong> library from python to visualize the data points, dividing up the colors for each community 
+            districts (Manhattan, Brooklyn, Bronx, Queens, Staten Island). 
         </p>
         
         <ul>Navy Circle: Misdemeanor</ul>
@@ -60,45 +60,67 @@
         <p><a href="map.html" class="footer__link">Folium Map</a></p>
 
         <p>
-            <i class="fas fa-book"></i> From the graphs above, I was able to find out that all the features contribute to heart attack at least in certain level
+            <i class="fas fa-book"></i> From the Folium map, the colors are mostly navys and oranges which are misdemeanor and felony.
+            If you go into the link and zoom in few red and green circles are noticed also, but there are not as many as the navy and
+            orange circles.
         </p>
 
         <p>
-            Among all the categorical features, I have decided to get statistics of "gender" feature it is easy to comprehend for people who sees
-            this project and this is the feature which people mostly want from the data.
+            Now, I visualized the data by "Date", "Law Category", "Race/Gender", and "Age"
         </p>
+
+        <h4> Arrested Date </h4>
         <div class="port1img">
-            <img src="portfolio-4-img/Gender Heart Attack Rate.png" alt="gender stats">
+            <img src="portfolio-2-img/arrest date.jpg" alt="date">
         </div>
         <p>
-            <i class="fas fa-book"></i> From the statistic of "gender" feature above, it was clear to see that male has higher possibility
-            of having a heart attack than that of female.
+            <i class="fas fa-book"></i> From the bar graph above, the amount of crime had been constantly decreasing since <strong>2011</strong>.
+            Probably because of the development of technology and science. The more developed technology, the more probability that police 
+            can catch crimes and easier to prevent the crimes with Cameras for example.
         </p>
+        
+        <h4> Law Category </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/arrest date categories.jpg" alt="law categories">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> When we looked at the "Folium" map, there were only blue and orange circles and this graph supports
+            the visualization. In the graph, the number of felony and misdemeanor are significantly higher than the other type of crimes.
+            Interesting part is that there is really small amount of crime occurrences of violation and infraction while the number of 
+            felony crimes is pretty much consistent. The crime of misdemeanor has still the highest, but it had been consistently
+            decreasing.
+        </p>
+
+        <h4> Race / Gender </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/gender_ethnicity.jpg" alt="g_e">
+        </div>
+        <p><i class="fas fa-book"></i> The graph also illustrated the difference of the crime rate between the races and genders.
+            Black people tend to commit more crimes than that of other races, and men tend to commit more crimes than that of female.
+        </p>
+        
+        <h4> Age </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/age.jpg" alt="age">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Most of the observaction can be seen as obvious, but there is also an interesting observation. There are few people who are older
+            than 65 still committing crimes. It is still quite small amount of numbers compared to other age groups, but still it was an 
+            interesting data for me to observe. 
+        </p>
+
 
         <p>
-            After the visualization of the categorical features, I have decided to look into the numeric categorical features such as
-            age, chol, and etc. Below graphs represent the distribution of each numeric features.
+            After looking at the crime rates visualization for each categorical feature, I visualized the crime rate for each community district
+            which are Manhattan, Queens, Staten Island, Brooklyn, and Bronx. After that, I counted the number of crime occurrences for each
+            section code within the community district and listed which place is safe to visit and which place is not safe to visit.
         </p>
-        <img src="portfolio-4-img/Continuous Features KDE Plots.jpg" alt="KDE">
-        <p><i class="fas fa-book"></i> KDE Plot represents the data using a continuous probability density curve. The more two kde plots overlap, the less difference between
-        those two. As I mentioned it before, from the KDE plots I was able to see that every features have certain effect on heart attack rate.
-        Among all the features, I was able to find out that "cholesterol rate" feature has the least amount of impact on heart attack.
-        </p>
-
+        
         <p>
-            If there is a significant difference between two features, it is better to illustrate the difference with the graphs.
-            However, if there two features on the graph is simillar, I thought it would be better to show the heatmap to illustrate the
-            detailed difference between them. Below shows the heatmap(Correlation) of the continuous features.
-        </p>
-        <img src="portfolio-4-img/Continuous Features Heatmap.png" alt="Heatmap">
-        <p><i class="fas fa-book"></i> From the Heatmap I was able to figure out that "age" and "thalachh" features have the highest
-            correlation and "trtbps" and "thalachh" have the least. The annotation of the Heatmap shows that "age" and "thalachh" features
-            are correlated with the value of -0.4, which means that whenever age increases, thalachh decreases and vice versa.
-        </p>
-
-        <p>Among all the continuous features, I have decided to pick one feature which was "age" to plot a histogram to see the distribution.
+            Among all the continuous features, I have decided to pick one feature which was "age" to plot a histogram to see the distribution.
             Below illustrates the histogram and statistic of "age" feature.
         </p>
+
         <img src="portfolio-4-img/Age Visualization.png" alt="Age Histogram">
         <div class="port1img">
             <img src="portfolio-4-img/Age Heart Attack Rate 1.png" alt="Age Stats" class="port1img_marg">
