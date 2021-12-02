@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Lim Portfolio</title>
@@ -36,6 +36,8 @@
     </section>
 
     <div class="portfolio-item-individual">
+
+        <h3> Data Explorartion / EDA </h3>
         
         <p>
             I have used the data from website Kaggle to predict the Heart Attack rate of the patient based on their biological dataset
@@ -44,7 +46,7 @@
         <img src="portfolio-1-img/dataset.png" alt="data">
 
         <p>
-            <i class="fas fa-map-marker-alt"></i>   After checking up with the data, see if there is any null values and see how many unique values for each columns, I have changed
+            After checking up with the data, see if there is any null values and see how many unique values for each columns, I have changed
             the categorical values into numeric values using mapping function to visualize those into plots. Below image shows the distribution
             of each categorical features.
         </p>
@@ -53,12 +55,12 @@
             <i class="fas fa-book"></i> From the graphs above, I was able to find out that all the features contribute to heart attack at least in certain level
         </p>
 
-        <p class="tab">
+        <p>
             Among all the categorical features, I have decided to get statistics of "gender" feature it is easy to comprehend for people who sees
             this project and this is the feature which people mostly want from the data.
         </p>
         <div class="port1img">
-            <img src="portfolio-1-img/Gender Heart Attack Rate.png" alt="age stats">
+            <img src="portfolio-1-img/Gender Heart Attack Rate.png" alt="gender stats">
         </div>
         <p>
             <i class="fas fa-book"></i> From the statistic of "gender" feature above, it was clear to see that male has higher possibility
@@ -66,7 +68,7 @@
         </p>
 
         <p>
-            <i class="fas fa-map-marker-alt"></i>After the visualization of the categorical features, I have decided to look into the numeric categorical features such as
+            After the visualization of the categorical features, I have decided to look into the numeric categorical features such as
             age, chol, and etc. Below graphs represent the distribution of each numeric features.
         </p>
         <img src="portfolio-1-img/Continuous Features KDE Plots.jpg" alt="KDE">
@@ -100,6 +102,47 @@
             attack", <strong>50s</strong> have the highest, but they have the highest number of "less chance of heart attack" at the same time. 
             With the statistic, I was able to conclude that the most vulnerable age range was surprisingly <strong>40s</strong>. 
         </p>
+
+        <h3> Prediction </h3> 
+        
+        <div class="port1img">
+            <img src="portfolio-1-img/Scatter plot of two important features.jpg" alt="scatter">
+        </div>
+        <p><i class="fas fa-book"></i> Above picture is a scatter plot of the two most important features (Highly contributes to predict the output) 
+            of this data which are "thalachh", and "oldpeak". As you can see that data is hard to be separated linearly. Therefore, I assume 
+            the models that use linear method won't perform well.
+        </p>
+
+        <div class="port1img">
+            <img src="portfolio-1-img/Model Accuracy Scores.png" alt="scores">
+        </div>
+        <p><i class="fas fa-book"></i> Above Dataframe illustrates the each model's accuracy scores and like I have assumed before, the methods
+            that use linear method did not perform well, but KNN model performed the best instead.
+        </p>
+
+        <h4> ROC Curve of the Best Model (KNN) </h4>
+        <div class="port1img">
+            <img src="portfolio-1-img/ROC Curve of KNN model.jpg" alt="ROC">
+        </div>
+        <p><i class="fas fa-book"></i> 
+            The ROC Curve shows the trade-off between sensitivity and specificity. If the model gives the curves closer to the top-left
+            corner, it indicates a better performance. On the other hand, if the model gives the curves closer to the 45 degree diagonal line,
+            it represents the less accuracy.
+        </p>
+
+        <h4>KNN Visualization</h4>
+        <div class="port1img">
+            <img src="portfolio-1-img/KNN Visualization.jpg" alt="KNN Vis">
+        </div>
+        <p><i class="fas fa-book"></i>
+            In order to visualize the KNN classification, I had to choose two features that are correlated the least and which both correlates
+            the most to the output which are "cp", "oldpeak". (Referred to the heatmap below.)As a result, KNN Classification with only two 
+            features gave us 80% of accuracy which is pretty good.
+        </p>
+        <div class="port1img">
+            <img src="portfolio-1-img/KNN Visualization.jpg" alt="KNN Vis">
+        </div>
+
 
         
     </div>
