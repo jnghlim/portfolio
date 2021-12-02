@@ -477,7 +477,8 @@ span {
     height:300px;
 }
 
-.port1img {
+.port1img,
+.port2img {
     display:flex;
     justify-content:space-around;
 }
@@ -485,4 +486,9 @@ span {
 .port4,
 .port2 {
     font-size: 1.2rem;
+}
+
+.port2img img{
+    width: 500px;
+    height:500px;
 }
