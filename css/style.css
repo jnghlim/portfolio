@@ -470,3 +470,16 @@ span {
     font-size: 0.8rem;
     color:white;
 }
+
+.port1img_marg {
+    margin-bottom: 10px;
+    width:300px;
+    height:300px;
+}
+
+.port1img {
+    display:flex;
+    justify-content:space-around;
+}
+
+.tab { margin-left: 40px; }
