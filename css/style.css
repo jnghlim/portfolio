@@ -481,3 +481,8 @@ span {
     display:flex;
     justify-content:space-around;
 }
+
+.port4,
+.port2 {
+    font-size: 1.2rem;
+}
