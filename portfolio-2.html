@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Lim Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/350b94b0f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <strong> Heart Attack Prediction </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Data Source: Kaggle.com | Library: Pandas, Matplotlib, Seaborn</p>
+        <img src="img/heart.jpg" alt="heart" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+
+        <h3> Data Explorartion / EDA </h3>
+        
+        <p>
+            I have used the data from website Kaggle to predict the Heart Attack rate of the patient based on their biological dataset
+            such as their age, gender, cholesterol amount etc.  Below is the head of the data that I used.
+        </p>
+        <img src="portfolio-4-img/dataset.png" alt="data">
+
+        <p>
+            After checking up with the data, see if there is any null values and see how many unique values for each columns, I have changed
+            the categorical values into numeric values using mapping function to visualize those into plots. Below image shows the distribution
+            of each categorical features.
+        </p>
+        <img src="portfolio-4-img/Categorical Features.jpg" alt="categorical features">
+        <p>
+            <i class="fas fa-book"></i> From the graphs above, I was able to find out that all the features contribute to heart attack at least in certain level
+        </p>
+
+        <p>
+            Among all the categorical features, I have decided to get statistics of "gender" feature it is easy to comprehend for people who sees
+            this project and this is the feature which people mostly want from the data.
+        </p>
+        <div class="port1img">
+            <img src="portfolio-4-img/Gender Heart Attack Rate.png" alt="gender stats">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> From the statistic of "gender" feature above, it was clear to see that male has higher possibility
+            of having a heart attack than that of female.
+        </p>
+
+        <p>
+            After the visualization of the categorical features, I have decided to look into the numeric categorical features such as
+            age, chol, and etc. Below graphs represent the distribution of each numeric features.
+        </p>
+        <img src="portfolio-4-img/Continuous Features KDE Plots.jpg" alt="KDE">
+        <p><i class="fas fa-book"></i> KDE Plot represents the data using a continuous probability density curve. The more two kde plots overlap, the less difference between
+        those two. As I mentioned it before, from the KDE plots I was able to see that every features have certain effect on heart attack rate.
+        Among all the features, I was able to find out that "cholesterol rate" feature has the least amount of impact on heart attack.
+        </p>
+
+        <p>
+            If there is a significant difference between two features, it is better to illustrate the difference with the graphs.
+            However, if there two features on the graph is simillar, I thought it would be better to show the heatmap to illustrate the
+            detailed difference between them. Below shows the heatmap(Correlation) of the continuous features.
+        </p>
+        <img src="portfolio-4-img/Continuous Features Heatmap.png" alt="Heatmap">
+        <p><i class="fas fa-book"></i> From the Heatmap I was able to figure out that "age" and "thalachh" features have the highest
+            correlation and "trtbps" and "thalachh" have the least. The annotation of the Heatmap shows that "age" and "thalachh" features
+            are correlated with the value of -0.4, which means that whenever age increases, thalachh decreases and vice versa.
+        </p>
+
+        <p>Among all the continuous features, I have decided to pick one feature which was "age" to plot a histogram to see the distribution.
+            Below illustrates the histogram and statistic of "age" feature.
+        </p>
+        <img src="portfolio-4-img/Age Visualization.png" alt="Age Histogram">
+        <div class="port1img">
+            <img src="portfolio-4-img/Age Heart Attack Rate 1.png" alt="Age Stats" class="port1img_marg">
+            <img src="portfolio-4-img/Age Heart Attack Rate 2.png" alt="Age Stats" class="port1img_marg">
+        </div>
+        <p><i class="fas fa-book"></i>
+            I have excluded the <strong>20s'</strong> heart attack rate because there was not enough data. The amount of data is unbalanced
+            between the <strong>(30s-60s)</strong> and <strong>(30s and 70s)</strong>. Just by looking at the numbers of "more chance of heart 
+            attack", <strong>50s</strong> have the highest, but they have the highest number of "less chance of heart attack" at the same time. 
+            With the statistic, I was able to conclude that the most vulnerable age range was surprisingly <strong>40s</strong>. 
+        </p>
+
+        <h3> Prediction </h3> 
+        
+        <div class="port1img">
+            <img src="portfolio-4-img/Scatter plot of two important features.jpg" alt="scatter">
+        </div>
+        <p><i class="fas fa-book"></i> Above picture is a scatter plot of the two most important features (Highly contributes to predict the output) 
+            of this data which are "thalachh", and "oldpeak". As you can see that data is hard to be separated linearly. Therefore, I assume 
+            the models that use linear method won't perform well.
+        </p>
+
+        <div class="port1img">
+            <img src="portfolio-4-img/Model Accuracy Scores.png" alt="scores">
+        </div>
+        <p><i class="fas fa-book"></i> Above Dataframe illustrates the each model's accuracy scores and like I have assumed before, the methods
+            that use linear method did not perform well, but KNN model performed the best instead.
+        </p>
+
+        <h4> ROC Curve of the Best Model (KNN) </h4>
+        <div class="port1img">
+            <img src="portfolio-4-img/ROC Curve of KNN model.jpg" alt="ROC">
+        </div>
+        <p><i class="fas fa-book"></i> 
+            The ROC Curve shows the trade-off between sensitivity and specificity. If the model gives the curves closer to the top-left
+            corner, it indicates a better performance. On the other hand, if the model gives the curves closer to the 45 degree diagonal line,
+            it represents the less accuracy.
+        </p>
+
+        <h4>KNN Visualization</h4>
+        <div class="port1img">
+            <img src="portfolio-4img/KNN Visualization.jpg" alt="KNN Vis">
+        </div>
+        <p><i class="fas fa-book"></i>
+            In order to visualize the KNN classification, I had to choose two features that are correlated the least and which both correlates
+            the most to the output which are "cp", "oldpeak". (Referred to the heatmap below.)As a result, KNN Classification with only two 
+            features gave us 80% of accuracy which is pretty good.
+        </p>
+        <div class="port1img">
+            <img src="portfolio-4-img/featrue heatmap.png" alt="KNN Vis">
+        </div>
+
+
+        
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:lim951207@gmail.com" class="footer__link">lim951207@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.kaggle.com/lim951207">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mike-lim-888b01162/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <span>(424)420-8182</span>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
