@@ -46,124 +46,107 @@
              and the test scores.
         </p>
 
-        
+        <h4> Data Distribution </h4>
         <img src="portfolio-1-img/bar_dist.png" alt="bar_map">
         <p>
             <i class="fas fa-book"></i> Graph above shows the distribution of the student for each feature. Y axis of each graph represents 
             the number of students. For the gender feature, I was able to see that data is well balanced. There are various kinds for
-            parental level of education and race features. We now need to see the comparison of the mean scores for each feature. The graph
-            for each feature 
+            parental level of education and race features. 
         </p>
 
         <img src="portfolio-1-img/score_dist.png" alt="scores_map">
         <p>
-            <i class="fas fa-book"></i> Graph above shows the distribution of the student's score for each test. 
-        </p>
-
-        <h4> Arrested Date </h4>
-        <div class="port1img">
-            <img src="portfolio-2-img/arrest date.jpg" alt="date">
-        </div>
-        <p>
-            <i class="fas fa-book"></i> From the bar graph above, the amount of crime had been constantly decreasing since <strong>2011</strong>.
-            Probably because of the development of technology and science. The more developed technology, the more probability that police 
-            can catch crimes and easier to prevent the crimes with Cameras for example.
+            <i class="fas fa-book"></i> Graph above shows the distribution of the student's score for each test. From the graph above, it is
+            hard to tell which subject has higher average test score because their distributions look similar.Therefore, I decided to visualize
+            the mean score for each subject.
         </p>
         
-        <h4> Law Category </h4>
+        <h4> Mean Scores Comparison</h4>
         <div class="port1img">
-            <img src="portfolio-2-img/arrest date categories.jpg" alt="law categories">
+            <img src="portfolio-1-img/scores_box_plot.jpeg" alt="scores_box_map">
+        </div>
+        <div class="port1img">
+            <img src="portfolio-1-img/mean_score_plot.jpeg" alt="scores_map">
         </div>
         <p>
-            <i class="fas fa-book"></i> When we looked at the "Folium" map, there were only blue and orange circles and this graph supports
-            the visualization. In the graph, the number of felony and misdemeanor are significantly higher than the other type of crimes.
-            Interesting part is that there is really small amount of crime occurrences of violation and infraction while the number of 
-            felony crimes is pretty much consistent. The crime of misdemeanor has still the highest, but it had been consistently
-            decreasing.
+            <i class="fas fa-book"></i> Like I mentioned above, even though the amount of distance from the farthest outliers to the third
+            quantiles is slightly different for each subject, there was no significant difference of the mean scores between the subjects.
+            We now need to see the comparison of the mean scores for each feature. The graph for each feature divided into each subject.
         </p>
 
-        <h4> Race / Gender </h4>
+        <h4> Scores Comparions - For each Features </h4>
+
+        <h5> Gender </h5>
         <div class="port1img">
-            <img src="portfolio-2-img/gender_ethnicity.jpg" alt="g_e">
+            <img src="portfolio-1-img/gender.png" alt="Gender">
         </div>
-        <p><i class="fas fa-book"></i> The graph also illustrated the difference of the crime rate between the races and genders.
-            Black people tend to commit more crimes than that of other races, and men tend to commit more crimes than that of female.
+        <p>
+            <i class="fas fa-book"></i> This distribution gives us an interesting outcome. There are more male workers who are in STEM industry
+            than that of females and this distribution proves it. The mean score of the math test is higher for male students while for 
+            other tests, females has higher mean scores (writing and reading). 
         </p>
         
-        <h4> Age </h4>
+        <h5> Race/Ethnicity </h5>
         <div class="port1img">
-            <img src="portfolio-2-img/age.jpg" alt="age">
+            <img src="portfolio-1-img/group.png" alt="race">
         </div>
         <p>
-            <i class="fas fa-book"></i> Most of the observaction can be seen as obvious, but there is also an interesting observation. There are few people who are older
-            than 65 still committing crimes. It is still quite small amount of numbers compared to other age groups, but still it was an 
-            interesting data for me to observe. 
+            <i class="fas fa-book"></i> I wasn't able to find out which alphabet represents which race/ethnicity. But I was able to conclude
+            that the mean score of the test was affected by the race and ethnicity. The graph was plotted in order from lowest to highest,
+            illustrating from left to right. The order of the group for each subject was consistent.
         </p>
 
-
-        <p>
-            After looking at the crime rates visualization for each categorical feature, I visualized the crime rate for each community district
-            which are Manhattan, Queens, Staten Island, Brooklyn, and Bronx. After that, I counted the number of crime occurrences for each
-            section code within the community district and listed which place is safe to visit and which place is not safe to visit and made
-            a <strong>Tour Visit Guide.</strong>
-        </p>
-
-        <h4> Staten Island </h4>
-        <div class="port2img">
-            <img src="portfolio-2-img/staten island.jpg" alt="staten Island">
+        <h5> Lunch </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/lunch.png" alt="lunch">
         </div>
-
         <p>
-            <ul>Tourists Visit Guide (Staten Island)</ul>
-            <ul>Safe Places to Visit : 31</ul>
-            <ul>Concerened Places to Visit : 15, 30</ul>
-            <ul>Dangerous Places to Visit: 4</ul>
+            <i class="fas fa-book"></i> When I used to take SAT test, I did not eat anything because I got too nervous on every single test 
+            and that disturbed me. However, this graph tells me that I would have gotten better score if I had a meal before the test. 
+            Those graphs clearly shows that the mean score of the students who had lunch was higher than that of students who did not have
+            lunch.
+        </p>
+        
+        <h5> Parental Level of Education </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/parental_level.png" alt="lunch">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Graph above also shows that the parental level of education also matters their students' test scores
+            because the mean score of each subject was consistent for each parental level of education.
         </p>
 
-        <h4> Queens </h4>
+
+        <h5> Test Preparation </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/test_preparation.png" alt="lunch">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Studying with diligent attitude with consistency is important. However, this graph shows that 
+            the test preparation course is also important. The mean score of each subject for students who have completed their test 
+            preparation was higher than that of students who have not completed their test preparation.
+        </p>
+
+        <h4> Correlations between the Subjects </h4>
+        <p>
+            After comparing the mean score of each features, I decided to see the relationship between the test scores for each subject.
+        </p>
+
         <div class="port2img">
-            <img src="portfolio-2-img/queens.jpg" alt="queens">
+            <img src="portfolio-1-img/correlation_scatter.png" alt="scatter">
+        </div>
+        <div class="port2img">
+            <img src="portfolio-1-img/correlation_heat.png" alt="heatmap">
         </div>
         
         <p>
-            <ul>Tourists Visit Guide (Queens)</ul>
-            <ul>Safe Places to Visit : 3, 38, 42, 45, 52, 64, 67</ul>
-            <ul>Concerened Places to Visit : 22, 25, 26, 39, 40, 41, 46, 51, 53, 54, 62, 63, 66</ul>
-            <ul>Dangerous Places to Visit: 41, 65</ul>
+            The graphs above tells you that the person who got a good score on certain subject will get a good score on other tests.
+            It was interesting because there are certain people who are good at certain subjects.
         </p>
-
-        <h4> Bronx </h4>
-        <div class="port2img">
-            <img src="portfolio-2-img/bronx.jpg" alt="bronx">
-        </div>
         <p>
-            <ul>Tourists Visit Guide (Bronx)</ul>
-            <ul>Safe Places to Visit : 19, 39</ul>
-            <ul>Concerened Places to Visit : 8, 34, 35, 43, 48, 58, 59</ul>
-            <ul>Dangerous Places to Visit: 6, 24, 29, 49, 50</ul>
+            The heatmap supports this statement. Except for the boxes that are located on diagnoal line, all of the boxes have around
+            0.8 correlation among the subjects.
         </p>
-
-        <h4> Manhattan </h4>
-        <div class="port2img">
-            <img src="portfolio-2-img/manhattan.jpg" alt="manhattan">
-        </div>
-        <p>
-            <ul>Tourists Visit Guide (Manhattan)</ul>
-            <ul>Safe Places to Visit : 19, 39</ul>
-            <ul>Concerened Places to Visit : 20, 23, 37, 47, 56, 57, 71</ul>
-            <ul>Dangerous Places to Visit: 7,11,12,18, 70</ul>
-        </p>
-
-        <h4> Brooklyn </h4>
-        <div class="port2img">
-            <img src="portfolio-2-img/brooklyn.jpg" alt="brooklyn">
-        </div>
-        <p>
-            <ul>Tourists Visit Guide (Brooklyn)</ul>
-            <ul>Safe Places to Visit : 13, 33, 46, 54, 62</ul>
-            <ul>Concerened Places to Visit : 1, 2, 5, 9, 10, 14, 16, 17, 21, 32, 36, 42, 60, 61</ul>
-            <ul>Dangerous Places to Visit: 45, 55, 68, 69, 61</ul>
-        </p>        
     </div>
 
     <footer class="footer">
