@@ -371,9 +371,10 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
     grid-template-rows: repeat(auto-fit, minmax(200px, 280px));
     margin-bottom: 100px;
+    column-gap: 50px;
 }
 
 .portfolio_item {
@@ -513,4 +514,18 @@ span {
 
 .port3 {
     font-size: 1rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    font-weight: var(--fw-bold);
+}
+
+.precip_intro {
+    width: 100px;
+    height: 280px;
+}
+
+.perform_title {
+    font-size:3rem;
 }
