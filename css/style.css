@@ -373,6 +373,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 280px));
+    margin-bottom: 100px;
 }
 
 .portfolio_item {
@@ -491,4 +492,25 @@ span {
 .port2img img{
     width: 500px;
     height:500px;
+}
+
+.platform {
+    display:block;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+.title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    color:yellow;
+}
+
+.big {
+    font-size: var(--fs-h2);
+}
+
+.port3 {
+    font-size: 1rem;
 }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Lim Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/350b94b0f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <strong>Crime Rate Visualization</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro port2">Data Source: Kaggle.com | Library: Pandas, Matplotlib, Seaborn, Folium</p>
+        <img src="img/crime_rate.jpeg" alt="crime" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+
+        <h3> Data Explorartion / EDA </h3>
+        
+        <p>
+            I have used the data from website Kaggle to visualize the Crime rate in New York City based on the data of each occurrence of
+            the crime. After checking up with the data, I cleansed my unorganized data (categorical values with unreadable letters, abbreviations), 
+            using pandas library (used mapping and renaming). 
+        </p>
+            
+        <p>
+            After data cleansing, I used <strong>"Folium"</strong> library from python to visualize the data points, dividing up the colors for each community 
+            districts (Manhattan, Brooklyn, Bronx, Queens, Staten Island). 
+        </p>
+        
+        <ul>Navy Circle: Misdemeanor</ul>
+        <ul>Orange Circle: Felony</ul>
+        <ul>Green Circle: Violation</ul>
+        <ul>Red Circle: Infraction</ul>
+
+        <img src="portfolio-2-img/map.png" alt="map">
+        <p>Below button is connected to a page where you can zoom in and out or move around the map.</p>
+        <p><a href="map.html" class="footer__link">Folium Map</a></p>
+
+        <p>
+            <i class="fas fa-book"></i> From the Folium map, the colors are mostly navys and oranges which are misdemeanor and felony.
+            If you go into the link and zoom in few red and green circles are noticed also, but there are not as many as the navy and
+            orange circles.
+        </p>
+
+        <p>
+            Now, I visualized the data by "Date", "Law Category", "Race/Gender", and "Age"
+        </p>
+
+        <h4> Arrested Date </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/arrest date.jpg" alt="date">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> From the bar graph above, the amount of crime had been constantly decreasing since <strong>2011</strong>.
+            Probably because of the development of technology and science. The more developed technology, the more probability that police 
+            can catch crimes and easier to prevent the crimes with Cameras for example.
+        </p>
+        
+        <h4> Law Category </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/arrest date categories.jpg" alt="law categories">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> When we looked at the "Folium" map, there were only blue and orange circles and this graph supports
+            the visualization. In the graph, the number of felony and misdemeanor are significantly higher than the other type of crimes.
+            Interesting part is that there is really small amount of crime occurrences of violation and infraction while the number of 
+            felony crimes is pretty much consistent. The crime of misdemeanor has still the highest, but it had been consistently
+            decreasing.
+        </p>
+
+        <h4> Race / Gender </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/gender_ethnicity.jpg" alt="g_e">
+        </div>
+        <p><i class="fas fa-book"></i> The graph also illustrated the difference of the crime rate between the races and genders.
+            Black people tend to commit more crimes than that of other races, and men tend to commit more crimes than that of female.
+        </p>
+        
+        <h4> Age </h4>
+        <div class="port1img">
+            <img src="portfolio-2-img/age.jpg" alt="age">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Most of the observaction can be seen as obvious, but there is also an interesting observation. There are few people who are older
+            than 65 still committing crimes. It is still quite small amount of numbers compared to other age groups, but still it was an 
+            interesting data for me to observe. 
+        </p>
+
+
+        <p>
+            After looking at the crime rates visualization for each categorical feature, I visualized the crime rate for each community district
+            which are Manhattan, Queens, Staten Island, Brooklyn, and Bronx. After that, I counted the number of crime occurrences for each
+            section code within the community district and listed which place is safe to visit and which place is not safe to visit and made
+            a <strong>Tour Visit Guide.</strong>
+        </p>
+
+        <h4> Staten Island </h4>
+        <div class="port2img">
+            <img src="portfolio-2-img/staten island.jpg" alt="staten Island">
+        </div>
+
+        <p>
+            <ul>Tourists Visit Guide (Staten Island)</ul>
+            <ul>Safe Places to Visit : 31</ul>
+            <ul>Concerened Places to Visit : 15, 30</ul>
+            <ul>Dangerous Places to Visit: 4</ul>
+        </p>
+
+        <h4> Queens </h4>
+        <div class="port2img">
+            <img src="portfolio-2-img/queens.jpg" alt="queens">
+        </div>
+        
+        <p>
+            <ul>Tourists Visit Guide (Queens)</ul>
+            <ul>Safe Places to Visit : 3, 38, 42, 45, 52, 64, 67</ul>
+            <ul>Concerened Places to Visit : 22, 25, 26, 39, 40, 41, 46, 51, 53, 54, 62, 63, 66</ul>
+            <ul>Dangerous Places to Visit: 41, 65</ul>
+        </p>
+
+        <h4> Bronx </h4>
+        <div class="port2img">
+            <img src="portfolio-2-img/bronx.jpg" alt="bronx">
+        </div>
+        <p>
+            <ul>Tourists Visit Guide (Bronx)</ul>
+            <ul>Safe Places to Visit : 19, 39</ul>
+            <ul>Concerened Places to Visit : 8, 34, 35, 43, 48, 58, 59</ul>
+            <ul>Dangerous Places to Visit: 6, 24, 29, 49, 50</ul>
+        </p>
+
+        <h4> Manhattan </h4>
+        <div class="port2img">
+            <img src="portfolio-2-img/manhattan.jpg" alt="manhattan">
+        </div>
+        <p>
+            <ul>Tourists Visit Guide (Manhattan)</ul>
+            <ul>Safe Places to Visit : 19, 39</ul>
+            <ul>Concerened Places to Visit : 20, 23, 37, 47, 56, 57, 71</ul>
+            <ul>Dangerous Places to Visit: 7,11,12,18, 70</ul>
+        </p>
+
+        <h4> Brooklyn </h4>
+        <div class="port2img">
+            <img src="portfolio-2-img/brooklyn.jpg" alt="brooklyn">
+        </div>
+        <p>
+            <ul>Tourists Visit Guide (Brooklyn)</ul>
+            <ul>Safe Places to Visit : 13, 33, 46, 54, 62</ul>
+            <ul>Concerened Places to Visit : 1, 2, 5, 9, 10, 14, 16, 17, 21, 32, 36, 42, 60, 61</ul>
+            <ul>Dangerous Places to Visit: 45, 55, 68, 69, 61</ul>
+        </p>        
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:lim951207@gmail.com" class="footer__link">lim951207@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.kaggle.com/lim951207">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mike-lim-888b01162/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <span>(424)420-8182</span>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
