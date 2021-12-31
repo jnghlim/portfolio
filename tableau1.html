@@ -62,32 +62,84 @@
             <a href="https://public.tableau.com/app/profile/mike.lim7607/viz/Market_Sales_16409320877830/Story1#1" class="btn">Story (Tableau Public)</a>
         </div>  
 
-        <h5>1. Aims Grid</h5>
+        <h4>1. Aims Grid</h4>
         <img src="tableau1-img/aims_grid.png" alt="aims_grid">
+
+        <h4>2. Overall Sales and Ratings (+Interactivity)</h4>
+        <img src="tableau1-img/overall.png" alt="overall">
         <p>
-            <i class="fas fa-book"></i> Graph above shows the distribution of the student for each feature. Y axis of each graph represents 
-            the number of students. For the gender feature, I was able to see that data is well balanced. There are various kinds for
-            parental level of education and race features. 
+            <ul>
+                <li>
+                    From the graph (top left corner), the trend line (pink dotted line) indicates that the sales amount 
+                    has been constantly decreasing over the last three months.
+                </li>
+                <p></p>
+                <li>
+                    Clicking on each branch, we can notice that...
+                    <ul>
+                        <li>Branch C has the highest Total sales & Ratings.</li>
+                        <li>Branch B has the lowest Ratings.</li>
+                        <li>Branch A and B have the lowest Total sales</li>
+                        <li>The amount of sales was the highest at 19:00 for all of the branches.</li>
+                        <li>Rest of the time period, the amount of sales varied among the branches.</li>
+                    </ul>
+                </li>
+            </ul>
         </p>
 
-        <img src="portfolio-1-img/score_dist.png" alt="scores_map">
-        <p>
-            <i class="fas fa-book"></i> Graph above shows the distribution of the student's score for each test. From the graph above, it is
-            hard to tell which subject has higher average test score because their distributions look similar.Therefore, I decided to visualize
-            the mean score for each subject.
-        </p>
+        <h4><i>Questions</i></h4>
+        <ul>
+            <li>Which Product line/Gender should we aim for each branch to increase the Sales?</li>
+            <ul>
+                <li>Why do A and B Branch have lower Ratings/Sales compared to C branch?</li>
+                <li>Why does C Branch have higher Ratings/Sales compared to other branches?</li>
+            </ul>
+        </ul>
+        <p></p>
         
-        <h4> Mean Scores Comparison</h4>
-        <div class="port1img">
-            <img src="portfolio-1-img/scores_box_plot.jpeg" alt="scores_box_map">
-        </div>
-        <div class="port1img">
-            <img src="portfolio-1-img/mean_score_plot.jpeg" alt="scores_map">
-        </div>
+        <h4>3. Relationship between the Unit Price of the Products and Sales</h4>
+        <img src="tableau1-img/unit_prices.png" alt="unitprice">
         <p>
-            <i class="fas fa-book"></i> Like I mentioned above, even though the amount of distance from the farthest outliers to the third
-            quantiles is slightly different for each subject, there was no significant difference of the mean scores between the subjects.
-            We now need to see the comparison of the mean scores for each feature. The graph for each feature divided into each subject.
+            <ul>
+                <li>
+                    From the graph at the top, we can notice each branch's average price for each product line.
+                </li>
+                <p></p>
+                <li>
+                    From the graph at right-bottom, we can notice the number of quantities that were sold by product lines & branhces.
+                    If the product line that is placed at a high rank within this graph also has high average unit price, the profit maximizes.
+                    The more you sell expensive products, the more you get profits out of it.
+                </li>
+                <p></p>
+                <li>
+                    Clicking on each branch, we can notice that...
+                    <ul>
+                        <li>
+                            For branch C, Top 2 Product lines for selling the most amount of quantities matches with
+                            the Top 2 Product lines for average unit prices. The graph from left bottom also indicates that Top 2 Product lines for
+                            those branches have the most amount of profits.
+                        </li>
+                        <li>
+                            Branch B have also matching product lines, but branch A does not. The reasons why both branches have lower total
+                            sales than that of branch C are..
+                            <ul>
+                                <li>
+                                    For branch A, Top 2 Product lines for selling the most amount of quantities do not match with the Top 2 product lines
+                                    for average unit prices. Also the average unit price for Health and Beauty is way much lower than that of
+                                    other branches.
+                                </li>
+                                <li>
+                                    For branch B, even though it has matching product lines, total quantities are the lowest among the branches
+                                    and the average unit price for Electronics Accessories is way much lower than that of other branches and this
+                                    product line's rank for the amount of quantities sold is 3 which is pretty high
+                                </li>
+                            </ul>
+                        </li>
+                        <li>The amount of sales was the highest at 19:00 for all of the branches.</li>
+                        <li>Rest of the time period, the amount of sales varied among the branches.</li>
+                    </ul>
+                </li>
+            </ul>
         </p>
 
         <h4> Scores Comparions - For each Features </h4>
