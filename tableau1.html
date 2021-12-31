@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Lim Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/350b94b0f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <strong class="perform_title">Student Performance Visualization</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro port2">Data Source: Kaggle.com</p>
+        <img src="img/studying.jpg" alt="crime" class="intro__img precip_intro">
+    </section>
+
+    <div class="portfolio-item-individual">
+
+        <h3> Data Explorartion / EDA </h3>
+        
+        <p>
+            I have used the data from website Kaggle to visualize the Studnets' exam (reading, writing, math) score based on the data of 
+            each student's status such as "Did he/she have lunch before the test?", "Parent's education level", "Has he/she completed test
+             preparation course?", and "Race/Ethnicity". The main point of this project was to see the relationship between the features above
+             and the test scores.
+        </p>
+
+        <h4> Data Distribution </h4>
+        <img src="portfolio-1-img/bar_dist.png" alt="bar_map">
+        <p>
+            <i class="fas fa-book"></i> Graph above shows the distribution of the student for each feature. Y axis of each graph represents 
+            the number of students. For the gender feature, I was able to see that data is well balanced. There are various kinds for
+            parental level of education and race features. 
+        </p>
+
+        <img src="portfolio-1-img/score_dist.png" alt="scores_map">
+        <p>
+            <i class="fas fa-book"></i> Graph above shows the distribution of the student's score for each test. From the graph above, it is
+            hard to tell which subject has higher average test score because their distributions look similar.Therefore, I decided to visualize
+            the mean score for each subject.
+        </p>
+        
+        <h4> Mean Scores Comparison</h4>
+        <div class="port1img">
+            <img src="portfolio-1-img/scores_box_plot.jpeg" alt="scores_box_map">
+        </div>
+        <div class="port1img">
+            <img src="portfolio-1-img/mean_score_plot.jpeg" alt="scores_map">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Like I mentioned above, even though the amount of distance from the farthest outliers to the third
+            quantiles is slightly different for each subject, there was no significant difference of the mean scores between the subjects.
+            We now need to see the comparison of the mean scores for each feature. The graph for each feature divided into each subject.
+        </p>
+
+        <h4> Scores Comparions - For each Features </h4>
+
+        <h5> Gender </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/gender.png" alt="Gender">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> This distribution gives us an interesting outcome. There are more male workers who are in STEM industry
+            than that of females and this distribution proves it. The mean score of the math test is higher for male students while for 
+            other tests, females has higher mean scores (writing and reading). 
+        </p>
+        
+        <h5> Race/Ethnicity </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/group.png" alt="race">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> I wasn't able to find out which alphabet represents which race/ethnicity. But I was able to conclude
+            that the mean score of the test was affected by the race and ethnicity. The graph was plotted in order from lowest to highest,
+            illustrating from left to right. The order of the group for each subject was consistent.
+        </p>
+
+        <h5> Lunch </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/lunch.png" alt="lunch">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> When I used to take SAT test, I did not eat anything because I got too nervous on every single test 
+            and that disturbed me. However, this graph tells me that I would have gotten better score if I had a meal before the test. 
+            Those graphs clearly shows that the mean score of the students who had lunch was higher than that of students who did not have
+            lunch.
+        </p>
+        
+        <h5> Parental Level of Education </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/parental_level.png" alt="lunch">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Graph above also shows that the parental level of education also matters their students' test scores
+            because the mean score of each subject was consistent for each parental level of education.
+        </p>
+
+
+        <h5> Test Preparation </h5>
+        <div class="port1img">
+            <img src="portfolio-1-img/test_preparation.png" alt="lunch">
+        </div>
+        <p>
+            <i class="fas fa-book"></i> Studying with diligent attitude with consistency is important. However, this graph shows that 
+            the test preparation course is also important. The mean score of each subject for students who have completed their test 
+            preparation was higher than that of students who have not completed their test preparation.
+        </p>
+
+        <h4> Correlations between the Subjects </h4>
+        <p>
+            After comparing the mean score of each features, I decided to see the relationship between the test scores for each subject.
+        </p>
+
+        <div class="port2img">
+            <img src="portfolio-1-img/correlation_scatter.png" alt="scatter">
+        </div>
+        <div class="port2img">
+            <img src="portfolio-1-img/correlation_heat.png" alt="heatmap">
+        </div>
+        
+        <p>
+            The graphs above tells you that the person who got a good score on certain subject will get a good score on other tests.
+            It was interesting because there are certain people who are good at certain subjects.
+        </p>
+        <p>
+            The heatmap supports this statement. Except for the boxes that are located on diagnoal line, all of the boxes have around
+            0.8 correlation among the subjects.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:lim951207@gmail.com" class="footer__link">lim951207@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.kaggle.com/lim951207">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mike-lim-888b01162/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <span>(424)420-8182</span>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
