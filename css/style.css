@@ -533,3 +533,8 @@ span {
 h5 {
     margin-left: 30px;
 }
+
+.query_box{
+    display:flex;
+    justify-content: center;
+}
