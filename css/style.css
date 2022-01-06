@@ -538,3 +538,7 @@ h5 {
     display:flex;
     justify-content: center;
 }
+
+.bank {
+    font-size: 2.7rem;
+}

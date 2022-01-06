@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Lim Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/350b94b0f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro bank">
+            <strong> Bank Marketing Visualization/Prediction </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro port4">Data Source: Kaggle.com | Library: Pandas, Matplotlib, Seaborn, Scikit-learn</p>
+        <img src="portfolio-5-img/bank.jpg" alt="bank" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+
+        <h3> Data Explorartion / EDA </h3>
+        
+        <p>
+            I have used the data from website Kaggle to predict the Subscription rate. Re-organized and modified the data and 
+            visualized them to illustrate the distribution of customers' financial status. 
+        </p>
+
+        <h4>Data Distribution</h4>
+        <img src="portfolio-5-img/Data_Distribution.jpeg" alt="dist">
+        <p>
+            <ul>
+                <li>
+                    The Y-axis from the graphs represent the count of the data for each column.
+                    <ul>
+                        <li>
+                            We are able to see that there are...
+                            <ul>
+                                <li>
+                                    More people who do not have loan
+                                </li>
+                                <li>
+                                    More people who are married
+                                </li>
+                                <li>
+                                    More people who completed secondary education.
+                                </li>
+                                <li>
+                                    More people who use cellular device for their contact
+                                </li>
+                                <li>
+                                    More people who have own housing
+                                </li>
+                                <li>
+                                    Most people who joined bank in January.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+
+        <h4>Job Distribution</h4>
+        <img src="portfolio-5-img/Subscription_Rate_by_Job.jpg" alt="subscription">
+        <p>
+            <ul>
+                <li>
+                    From the graph above, the outcome of no-subscription is way much higher than the subscription. Among all the jobs,
+                    the lowest category was student and the highest category was blue-collar. However, people who describe themselves as
+                    management had the highest subscription rate.
+                </li>
+            </ul>
+        </p>
+
+        <h4>Linearity of the Data</h4>
+        <img src="portfolio-5-img/Linearity_of_Data.jpg" alt="KDE">
+        <ul>
+            <li>
+                The graph above represents the linearity of the data (X-axis:Duration, Y-axis:Balance). Since it does not have a linearity, 
+                I assume the model with Logistic Regression, and SVC that utilizes the linearity of the data would not perform well compared
+                to other models.
+            </li>
+        </ul>
+
+        <h4>Encoding Plan</h4>
+        <img src="portfolio-5-img/encoding_plan.png" alt="KDE">
+        <ul>
+            <li>
+             I decided to plan encoding like above. Encoded month column into sin/cosine encoding since for month, higher value does not represent 
+            'better' compared to lower value (December is not better than January).
+            </li>
+        </ul>
+
+        <img src="portfolio-5-img/accuracy_table.jpeg" alt="KDE">
+        <ul>
+            <li>
+                Created a model with "Logistic Regression", "Gaussian NB", "KNN", "Decision Tree", "Random Forest", "SVC", and "XGB Classifier"
+                and compared the performance.
+            </li>
+        </ul>
+
+        <h4>Feature Importance</h4>
+        <img src="portfolio-5-img/Feature_importance.jpeg" alt="Heatmap">
+        <ul>
+            <li>
+                From the graph above, colums "poutcome success" and "duration" had the most postivie effect on the prediction and "poutcome unkown"
+                and "contact unknown" had the most negative effect on the prediction.
+            </li>
+        </ul>
+
+        <h4>Best Performed Model Evaluation</h4>
+        <h5>Log_Loss</h5>
+        <img src="portfolio-5-img/Log_Loss.jpeg" alt="Age Histogram">
+        <h5>Classifictaion Error</h5>
+        <img src="portfolio-5-img/Classification_error.jpeg" alt="Age Histogram">
+        <h5>ROC Curve</h5>
+        <img src="portfolio-5-img/ROC_Curve_KNN.jpeg" alt="Age Histogram">
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:lim951207@gmail.com" class="footer__link">lim951207@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.kaggle.com/lim951207">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mike-lim-888b01162/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <span>(424)420-8182</span>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
