@@ -132,8 +132,34 @@
         <img src="portfolio-5-img/Log_Loss.jpeg" alt="Age Histogram">
         <h5>Classifictaion Error</h5>
         <img src="portfolio-5-img/Classification_error.jpeg" alt="Age Histogram">
+
+        <ul>
+            <li>
+                We are able to see the Log Loss of the XGB Classifier model decreases significantly approximately at 10th epoch, and it remains
+                until the end of the epochs. Therefore, we could have done only 15-18 epochs to reduce the amount of time for modeling since the
+                amount of log loss remains the same after the 20th epochs.
+            </li>
+            <li>
+                Similarly, the classification error rate is dropped the most approximately at 15th epochs and it remains almost the same even though
+                it fluctuates a little bit.
+            </li>
+        </ul>
+
         <h5>ROC Curve</h5>
         <img src="portfolio-5-img/ROC_Curve_KNN.jpeg" alt="Age Histogram">
+        <ul>
+            <li>
+                The ROC Curve above represents the trade-off between sensitivity and specificity and classifier that gives curve closer to 
+                the top-left corner indicates a better performance. As a baseline, a random classifier is expected to give points lying along the diagonal.
+                The closer the curve comes to the 45-degree diagonal of the ROC space, the less accurate the test.
+            </li>
+            <li>
+                <strong>
+                    From three graphs above, we are able to see that this model fits well since it neither overfits nor underfits the data.
+                </strong>
+            </li>
+        </ul>
+        
     </div>
 
     <footer class="footer">
