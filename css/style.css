@@ -537,6 +537,7 @@ h5 {
 .query_box{
     display:flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .bank {
